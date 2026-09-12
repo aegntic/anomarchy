@@ -803,7 +803,14 @@ private fun QuickshellTelemetryFlyout(
         horizontalArrangement = Arrangement.SpaceBetween
       ) {
         Text("Kernel", color = theme.textMuted, fontSize = 8.sp, fontFamily = FontFamily.Monospace)
-        Text("6.12.9-omarchy-zen", color = theme.textPrimary, fontSize = 8.sp, fontFamily = FontFamily.Monospace)
+        Text("6.13.2-aegntic-zen", color = theme.textPrimary, fontSize = 8.sp, fontFamily = FontFamily.Monospace)
+      }
+      Row(
+        modifier = Modifier.fillMaxWidth(),
+        horizontalArrangement = Arrangement.SpaceBetween
+      ) {
+        Text("Lineage", color = theme.textMuted, fontSize = 8.sp, fontFamily = FontFamily.Monospace)
+        Text("DHH × @aegntic", color = theme.accentPrimary, fontSize = 8.sp, fontFamily = FontFamily.Monospace, fontWeight = FontWeight.Bold)
       }
       Row(
         modifier = Modifier.fillMaxWidth(),

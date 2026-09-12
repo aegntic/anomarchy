@@ -21,9 +21,11 @@ import com.example.omarchy.model.AppType
 import com.example.omarchy.model.ThemePreset
 import com.example.omarchy.state.OmarchyViewModel
 import com.example.omarchy.ui.ControlCenterModal
+import com.example.omarchy.ui.FloatingMascotAssistant
 import com.example.omarchy.ui.HyprlandDesktop
 import com.example.omarchy.ui.KeyboardShortcutsHud
 import com.example.omarchy.ui.KeybindsCheatSheet
+import com.example.omarchy.ui.LoadingSplashScreen
 import com.example.omarchy.ui.MacroManagerModal
 import com.example.omarchy.ui.QuickshellBar
 import com.example.omarchy.ui.SuperDock
@@ -154,6 +156,9 @@ fun OmarchyApp(viewModel: OmarchyViewModel) {
   val isMacroManagerOpen by viewModel.isMacroManagerOpen.collectAsStateWithLifecycle()
   val macroExecutionProgress by viewModel.macroExecutionProgress.collectAsStateWithLifecycle()
   val macroNotification by viewModel.macroNotification.collectAsStateWithLifecycle()
+
+  val isSplashScreenVisible by viewModel.isSplashScreenVisible.collectAsStateWithLifecycle()
+  val isMascotAssistantVisible by viewModel.isMascotAssistantVisible.collectAsStateWithLifecycle()
 
   val focusedWindow = windows.firstOrNull { it.id == focusedWindowId }
 
@@ -292,6 +297,21 @@ fun OmarchyApp(viewModel: OmarchyViewModel) {
             )
           }
         }
+
+        // Optional Floating Mascot Assistant (First launch companion)
+        if (isMascotAssistantVisible && !isSplashScreenVisible) {
+          Box(
+            modifier = Modifier
+              .fillMaxSize()
+              .padding(bottom = if (isHudOpen) 70.dp else 12.dp, end = 12.dp),
+            contentAlignment = Alignment.BottomEnd
+          ) {
+            FloatingMascotAssistant(
+              theme = theme,
+              onDismiss = { viewModel.dismissMascotAssistant() }
+            )
+          }
+        }
       }
     }
 
@@ -358,6 +378,14 @@ fun OmarchyApp(viewModel: OmarchyViewModel) {
           viewModel.updateMacroShortcut(id, label, code, superReq, shiftReq, ctrlReq, altReq)
         },
         onClose = { viewModel.closeMacroManager() }
+      )
+    }
+
+    // Animated Loading / Boot Splash Screen
+    if (isSplashScreenVisible) {
+      LoadingSplashScreen(
+        theme = theme,
+        onDismiss = { viewModel.dismissSplashScreen() }
       )
     }
   }

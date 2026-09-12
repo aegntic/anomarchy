@@ -611,7 +611,8 @@ fun ControlCenterModal(
             Text("Compositor: Hyprland (Wayland Tiling)", color = theme.textSecondary, fontSize = 10.sp, fontFamily = FontFamily.Monospace)
             Text("Shell: Quickshell v0.4.0 (Single Unified Desktop Shell)", color = theme.textSecondary, fontSize = 10.sp, fontFamily = FontFamily.Monospace)
             Text("Agent: Agentic Linux Copilot (agentd active)", color = theme.terminalGreen, fontSize = 10.sp, fontFamily = FontFamily.Monospace)
-            Text("Created by David Heinemeier Hansson (DHH) / OMACOM", color = theme.textMuted, fontSize = 9.sp, fontFamily = FontFamily.Monospace)
+            Text("Original OS & Vision: David Heinemeier Hansson (DHH)", color = theme.textMuted, fontSize = 9.sp, fontFamily = FontFamily.Monospace)
+            Text("Mobile Architecture: @aegntic (100% Sovereign & Offline)", color = theme.accentPrimary, fontSize = 9.sp, fontFamily = FontFamily.Monospace, fontWeight = FontWeight.Bold)
           }
         }
       }

@@ -133,6 +133,13 @@ class OmarchyViewModel(
   private val _isHudCollapsed = MutableStateFlow(false)
   val isHudCollapsed: StateFlow<Boolean> = _isHudCollapsed.asStateFlow()
 
+  // Splash Screen & Cyber Mascot Assistant State
+  private val _isSplashScreenVisible = MutableStateFlow(true)
+  val isSplashScreenVisible: StateFlow<Boolean> = _isSplashScreenVisible.asStateFlow()
+
+  private val _isMascotAssistantVisible = MutableStateFlow(true)
+  val isMascotAssistantVisible: StateFlow<Boolean> = _isMascotAssistantVisible.asStateFlow()
+
   // Tiling Window Layout Controller State
   private val _tilingControllerState = MutableStateFlow(TilingControllerState())
   val tilingControllerState: StateFlow<TilingControllerState> = _tilingControllerState.asStateFlow()
@@ -298,15 +305,17 @@ class OmarchyViewModel(
       TerminalLine("       /\\         omarchy@archlinux", TerminalLineType.ACCENT),
       TerminalLine("      /  \\        -----------------", TerminalLineType.OUTPUT),
       TerminalLine("     /\\   \\       OS: Omarchy Linux (Arch based) x86_64", TerminalLineType.OUTPUT),
-      TerminalLine("    /      \\      Host: AI Studio Android Runtime v36", TerminalLineType.OUTPUT),
-      TerminalLine("   /   ,,   \\     Kernel: 6.10.8-omarchy-zen", TerminalLineType.OUTPUT),
-      TerminalLine("  /   |  |  -\\    Uptime: 4 days, 12 hours, 38 mins", TerminalLineType.OUTPUT),
-      TerminalLine(" /_-''    ''-_\\   Packages: 1,142 (pacman), 18 (flatpak)", TerminalLineType.OUTPUT),
+      TerminalLine("    /      \\      Host: Sovereign Android Handheld (SDK 36)", TerminalLineType.OUTPUT),
+      TerminalLine("   /   ,,   \\     Kernel: 6.13.2-aegntic-zen", TerminalLineType.OUTPUT),
+      TerminalLine("  /   |  |  -\\    Lineage: Desktop OS & Vision by David Heinemeier Hansson (DHH)", TerminalLineType.OUTPUT),
+      TerminalLine(" /_-''    ''-_\\   Mobile: Engineered by @aegntic (100% Sovereign & Offline)", TerminalLineType.SUCCESS),
+      TerminalLine("                  Uptime: 4 days, 12 hours, 38 mins", TerminalLineType.OUTPUT),
+      TerminalLine("                  Packages: 1,142 (pacman), 18 (flatpak)", TerminalLineType.OUTPUT),
       TerminalLine("                  Shell: zsh 5.9 (omarchy-p10k)", TerminalLineType.OUTPUT),
       TerminalLine("                  WM: Hyprland (Wayland Tiling Compositor)", TerminalLineType.OUTPUT),
       TerminalLine("                  Shell UI: Quickshell 0.4.0", TerminalLineType.OUTPUT),
       TerminalLine("                  Editor: Neovim 0.10 + LuaRocks", TerminalLineType.OUTPUT),
-      TerminalLine("                  AI Agent: Agentic Linux Copilot (Active)", TerminalLineType.OUTPUT),
+      TerminalLine("                  Companions: Catface, Longneck, Plinky", TerminalLineType.OUTPUT),
       TerminalLine("                  Theme: Tokyo Night (Omarchy Official)", TerminalLineType.SUCCESS),
       TerminalLine("                  Memory: 4.8GiB / 16.0GiB (30%)", TerminalLineType.OUTPUT),
       TerminalLine("", TerminalLineType.OUTPUT)
@@ -1832,6 +1841,18 @@ Omarchy treats AI coding agents not as a browser chatbot tab, but as an integral
     return parts.joinToString(" + ")
   }
 
+  fun dismissSplashScreen() {
+    _isSplashScreenVisible.value = false
+  }
+
+  fun toggleMascotAssistant() {
+    _isMascotAssistantVisible.value = !_isMascotAssistantVisible.value
+  }
+
+  fun dismissMascotAssistant() {
+    _isMascotAssistantVisible.value = false
+  }
+
   data class ShortcutParseResult(
     val keyCode: Int,
     val requiresSuper: Boolean,
@@ -1840,3 +1861,4 @@ Omarchy treats AI coding agents not as a browser chatbot tab, but as an integral
     val requiresAlt: Boolean
   )
 }
+

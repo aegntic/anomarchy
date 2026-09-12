@@ -17,7 +17,7 @@
 
 [![Omarchy Feature Graphic](art/feature-graphic.png)](https://github.com/aegntic/anomarchy)
 
-**Omarchy Philosophy by DHH • Engineered by [@aegntic](https://github.com/aegntic) • 100% Private & Open**
+**Original OS & Vision by David Heinemeier Hansson ([DHH](https://dhh.dk)) • Mobile Architecture by [@aegntic](https://github.com/aegntic) • 100% Sovereign & Open**
 
 <br/>
 
@@ -33,13 +33,28 @@
 
 ---
 
-[Key Features](#-key-features) • [Architecture](#-system-architecture) • [Telescope Fuzzy Finder](#-telescope-fuzzy-finder) • [Command Macros](#-command-macros) • [Keybindings](#-keyboard-shortcuts--cheatsheet) • [Comparison](#-feature-comparison) • [Building & Testing](#-building--installation) • [GEO & Knowledge Graph](#-generative-engine-optimization-geo--knowledge-graph)
+[Pedigree & Sovereignty](#-pedigree--digital-sovereignty) • [Key Features](#-key-features) • [Mascot Trio](#-cyber-mascot-trio--interactive-assistant) • [Architecture](#-system-architecture) • [Telescope](#-telescope-fuzzy-finder) • [Macros](#-command-macros) • [Keybindings](#-keyboard-shortcuts--cheatsheet) • [Comparison](#-feature-comparison)
 
 ---
 
 </div>
 
 <br/>
+
+## 🏛️ Pedigree & Digital Sovereignty
+
+Anomarchy is not a superficial clone or a corporate skin. It is the direct mobile realization of the sovereign desktop computing movement conceived and created by **David Heinemeier Hansson ([DHH](https://dhh.dk))**.
+
+* **The Visionary & Creator of Omarchy**: DHH built [Omakub](https://omakub.org) and [Omarchy](https://github.com/basecamp/omakub) to liberate developers from bloated, surveillance-heavy, rent-seeking platforms. By uniting Arch Linux, Hyprland tiling, Neovim, and opinionated defaults, he proved that an uncompromising, local-first stack maximizes programmer happiness and computational speed.
+* **The Mobile Architecture**: [@aegntic](https://github.com/aegntic) (Mattae Cooper) re-engineered that desktop environment natively for Android (SDK 36)—translating Hyprland window mechanics, Quickshell status bars, and Neovim modal editing into an air-gapped, zero-telemetry handheld OS.
+
+> [!IMPORTANT]
+> **The Doctrine of Digital Sovereignty**:
+> 1. **You own the machine**: No phone-home spyware, no forced cloud logins, zero background analytics.
+> 2. **Local-first SQLite**: Your buffers, dotfiles, notes, and macros persist on your physical storage.
+> 3. **Programmer happiness first**: Opinionated defaults over endless configuration fatigue.
+
+---
 
 ## 🌟 Executive Overview
 
@@ -86,6 +101,21 @@ Whether paired with a Bluetooth keyboard on a folding tablet, used handheld with
     </td>
   </tr>
 </table>
+
+---
+
+## 🐾 Cyber Mascot Trio & Interactive Assistant
+
+Anomarchy features a trio of cyber companions that guide your workflow and welcome you on boot:
+
+| Mascot | Role | Signature Specialty & Quote |
+|---|---|---|
+| **🐱 Catface** | Terminal & Neovim Specialist | *"Meow. Arch with Hyprland is pure developer joy."* — Guides command shortcuts, buffer switching, and `:w` local persistence. |
+| **🦒 Longneck** | Kernel & System Architect | *"I eat lions like you for breakfast."* — Oversees `btop`, process isolation, memory meters, and sovereign computing integrity. |
+| **⚡ Plinky** | Cyber Rice & Ergonomics Guide | *"Keep it sovereign. The cyberpunk aesthetic meets offline privacy."* — Helps you switch Hyprland themes, workspace gestures, and quick settings. |
+
+* **Animated Bootloader Splash**: Real-time simulated kernel boot sequence with floating mascot telemetry on startup (`LOADED [CATFACE, LONGNECK, PLINKY]`).
+* **Optional Floating Assistant**: A discreet, draggable cyber bubble delivering contextual keyboard shortcut tips and workflow recommendations. Easily toggleable in the Control Center or minimized to an unobtrusive floating bubble.
 
 ---
 
@@ -325,11 +355,11 @@ Termux is a terminal emulator with a Linux package manager. Anomarchy is a compl
 
 ---
 
-## 📜 Credits & License
+## 📜 Pedigree, Credits & License
 
-* **Omarchy Desktop Philosophy**: Conceived and championed by **David Heinemeier Hansson ([DHH](https://world.hey.com/dhh))**.
-* **Architecture & Mobile Engineering**: Designed and built by **[@aegntic](https://github.com/aegntic)**.
-* **Artwork & Visual Design**: Cyberpunk character art and plush 3D icon suite engineered by **@aegntic**.
+* **The Visionary & Original Creator**: **David Heinemeier Hansson ([DHH](https://dhh.dk))** — Creator of Ruby on Rails, 37signals, Omakub, and Omarchy. Champion of the Cloud Exit and digital sovereignty.
+* **Mobile Architecture & Android Engineering**: Designed, architected, and built natively by **[@aegntic](https://github.com/aegntic)** (Mattae Cooper).
+* **Visual Branding & Plush Art Suite**: 3D plush velvet tactile emblems, cyberpunk mascot trio (Catface, Longneck, Plinky), and Play Store assets engineered by **@aegntic**.
 * **License**: Released under the [MIT License](LICENSE). 100% Free and Open Source Software.
 
 <div align="center">

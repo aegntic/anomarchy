@@ -165,6 +165,15 @@ fun KeybindsCheatSheet(
             }
           }
         }
+
+        // Lineage & Sovereignty Footer
+        Text(
+          text = "Omarchy Mobile • Original OS & Vision by David Heinemeier Hansson (DHH) • Mobile Architecture by @aegntic • 100% Sovereign & Offline",
+          color = theme.textMuted,
+          fontSize = 8.sp,
+          fontFamily = FontFamily.Monospace,
+          modifier = Modifier.padding(top = 4.dp)
+        )
       }
     }
   }
