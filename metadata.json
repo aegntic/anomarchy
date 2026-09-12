@@ -1,0 +1,6 @@
+{
+  "name": "Omarchy",
+  "description": "Omarchy for Android — Opinionated, modern & keyboard-centric Linux desktop environment with Hyprland tiling window manager, Quickshell status bar, Neovim, terminal, agentic coding assistant, and themes.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
