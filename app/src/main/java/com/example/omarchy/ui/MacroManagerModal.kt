@@ -2,6 +2,7 @@ package com.example.omarchy.ui
 
 import android.view.KeyEvent
 import androidx.compose.animation.AnimatedVisibility
+import androidx.compose.animation.animateColor
 import androidx.compose.animation.animateColorAsState
 import androidx.compose.animation.core.RepeatMode
 import androidx.compose.animation.core.infiniteRepeatable
@@ -116,9 +117,9 @@ fun MacroManagerModal(
       modifier = Modifier
         .fillMaxWidth(0.94f)
         .fillMaxHeight(0.88f)
-        .clip(RoundedCornerShape(theme.windowCornerRadius.dp))
+        .clip(RoundedCornerShape(12.dp))
         .background(theme.surfaceColor)
-        .border(1.5.dp, theme.accentPrimary.copy(alpha = 0.8f), RoundedCornerShape(theme.windowCornerRadius.dp))
+        .border(1.5.dp, theme.accentPrimary.copy(alpha = 0.8f), RoundedCornerShape(12.dp))
         .clickable(enabled = false) {}
         .padding(16.dp)
         .testTag("macro_manager_modal")
@@ -217,7 +218,7 @@ fun MacroManagerModal(
                   fontFamily = FontFamily.Monospace
                 )
                 Text(
-                  text = "Step ${executionProgress.currentStep}/${executionProgress.totalSteps}: [${executionProgress.currentAction.type.displayName}] ${executionProgress.currentAction.payload}",
+                  text = "Step ${executionProgress.currentStep}/${executionProgress.totalSteps}: [${executionProgress.currentAction?.type?.displayName ?: ""}] ${executionProgress.currentAction?.payload ?: ""}",
                   color = theme.textPrimary,
                   fontSize = 11.sp,
                   fontFamily = FontFamily.Monospace
@@ -352,7 +353,7 @@ private fun RecordingBadge(
   actionCount: Int
 ) {
   val infiniteTransition = rememberInfiniteTransition(label = "pulse")
-  val dotColor by infiniteTransition.animateColorAsState(
+  val dotColor by infiniteTransition.animateColor(
     initialValue = theme.terminalRed,
     targetValue = theme.terminalRed.copy(alpha = 0.3f),
     animationSpec = infiniteRepeatable(
