@@ -5,6 +5,8 @@
 # ⚡ ANOMARCHY
 ### **Omarchy for Android — The Opinionated, Keyboard-Centric Linux Mobile OS**
 
+[![Latest Release](https://img.shields.io/github/v/release/aegntic/anomarchy?style=for-the-badge&logo=github&color=78f1a0&logoColor=black)](https://github.com/aegntic/anomarchy/releases/latest)
+[![Download APK](https://img.shields.io/badge/Download-APK_v1.0.0-00E5FF?style=for-the-badge&logo=android&logoColor=black)](https://github.com/aegntic/anomarchy/releases/latest)
 [![Android](https://img.shields.io/badge/Platform-Android_14+-3DDC84?style=for-the-badge&logo=android&logoColor=white)](https://android.com)
 [![Target SDK](https://img.shields.io/badge/Target_SDK-36_(Android_16)-007ACC?style=for-the-badge&logo=google)](https://developer.android.com)
 [![Kotlin](https://img.shields.io/badge/Kotlin-2.0+-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white)](https://kotlinlang.org)
@@ -33,7 +35,7 @@
 
 ---
 
-[Pedigree & Sovereignty](#-pedigree--digital-sovereignty) • [Key Features](#-key-features) • [Mascot Trio](#-cyber-mascot-trio--interactive-assistant) • [Architecture](#-system-architecture) • [Telescope](#-telescope-fuzzy-finder) • [Macros](#-command-macros) • [Keybindings](#-keyboard-shortcuts--cheatsheet) • [Comparison](#-feature-comparison)
+[⬇️ **Download v1.0.0 APK**](https://github.com/aegntic/anomarchy/releases/latest) • [Pedigree & Sovereignty](#-pedigree--digital-sovereignty) • [Key Features](#-key-features) • [Mascot Trio](#-cyber-mascot-trio--interactive-assistant) • [Architecture](#-system-architecture) • [Telescope](#-telescope-fuzzy-finder) • [Macros](#-command-macros) • [Keybindings](#-keyboard-shortcuts--cheatsheet) • [Comparison](#-feature-comparison)
 
 ---
 
