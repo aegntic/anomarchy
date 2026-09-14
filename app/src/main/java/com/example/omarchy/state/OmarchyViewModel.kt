@@ -134,10 +134,10 @@ class OmarchyViewModel(
   val isHudCollapsed: StateFlow<Boolean> = _isHudCollapsed.asStateFlow()
 
   // Splash Screen & Cyber Mascot Assistant State
-  private val _isSplashScreenVisible = MutableStateFlow(true)
+  private val _isSplashScreenVisible = MutableStateFlow(false)
   val isSplashScreenVisible: StateFlow<Boolean> = _isSplashScreenVisible.asStateFlow()
 
-  private val _isMascotAssistantVisible = MutableStateFlow(true)
+  private val _isMascotAssistantVisible = MutableStateFlow(false)
   val isMascotAssistantVisible: StateFlow<Boolean> = _isMascotAssistantVisible.asStateFlow()
 
   // Tiling Window Layout Controller State
