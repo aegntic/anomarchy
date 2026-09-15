@@ -6,7 +6,7 @@
 ### **Omarchy for Android — The Opinionated, Keyboard-Centric Linux Mobile OS**
 
 [![Latest Release](https://img.shields.io/github/v/release/aegntic/anomarchy?style=for-the-badge&logo=github&color=78f1a0&logoColor=black)](https://github.com/aegntic/anomarchy/releases/latest)
-[![Download APK](https://img.shields.io/badge/Download-APK_v1.0.0-00E5FF?style=for-the-badge&logo=android&logoColor=black)](https://github.com/aegntic/anomarchy/releases/latest)
+[![Download APK](https://img.shields.io/badge/Download-APK_v1.0.1-00E5FF?style=for-the-badge&logo=android&logoColor=black)](https://github.com/aegntic/anomarchy/releases/latest)
 [![Android](https://img.shields.io/badge/Platform-Android_14+-3DDC84?style=for-the-badge&logo=android&logoColor=white)](https://android.com)
 [![Target SDK](https://img.shields.io/badge/Target_SDK-36_(Android_16)-007ACC?style=for-the-badge&logo=google)](https://developer.android.com)
 [![Kotlin](https://img.shields.io/badge/Kotlin-2.0+-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white)](https://kotlinlang.org)
@@ -35,7 +35,7 @@
 
 ---
 
-[⬇️ **Download v1.0.0 APK**](https://github.com/aegntic/anomarchy/releases/latest) • [Pedigree & Sovereignty](#-pedigree--digital-sovereignty) • [Key Features](#-key-features) • [Mascot Trio](#-cyber-mascot-trio--interactive-assistant) • [Architecture](#-system-architecture) • [Telescope](#-telescope-fuzzy-finder) • [Macros](#-command-macros) • [Keybindings](#-keyboard-shortcuts--cheatsheet) • [Comparison](#-feature-comparison)
+[⬇️ **Download v1.0.1 APK**](https://github.com/aegntic/anomarchy/releases/latest) • [📱 Device Gallery](#-multi-device-experience--gallery) • [Pedigree & Sovereignty](#-pedigree--digital-sovereignty) • [Key Features](#-key-features) • [Architecture](#-system-architecture) • [Telescope](#-telescope-fuzzy-finder) • [Macros](#-command-macros) • [Keybindings](#-keyboard-shortcuts--cheatsheet) • [Comparison](#-feature-comparison)
 
 ---
 
@@ -106,18 +106,70 @@ Whether paired with a Bluetooth keyboard on a folding tablet, used handheld with
 
 ---
 
-## 🐾 Cyber Mascot Trio & Interactive Assistant
+## 📱 Multi-Device Experience & Gallery
 
-Anomarchy features a trio of cyber companions that guide your workflow and welcome you on boot:
+Anomarchy is dynamically responsive across modern handheld, folding, tablet, and desktop form factors—scaling seamlessly from high-density phone screens to full-width ultra-wide monitors.
 
-| Mascot | Role | Signature Specialty & Quote |
+### 📱 Phones & Foldables (Handheld & Pocket Cockpit)
+<p align="center">
+  <img src="docs/screenshots/devices/device_phone_stats.png" width="23%" alt="Phone Dashboard" />
+  <img src="docs/screenshots/devices/device_phone_controls.png" width="23%" alt="Phone Controls" />
+  <img src="docs/screenshots/devices/device_phone_terminal.png" width="23%" alt="Phone Shell" />
+  <img src="docs/screenshots/devices/device_phone_apps.png" width="23%" alt="Phone AI Studio" />
+</p>
+
+* **Compact Form-Factor Optimization**: Tactile sticky keyboard bar (`ESC`, `TAB`, `CTRL`, `ALT`, `|`, `~`, `/`, `$`), one-tap workspace switching, and battery/thermal telemetry flyout.
+* **Foldables (Pixel Fold / Galaxy Z Fold)**: Expands dynamically into a dual-column master-stack layout with full-height terminals and side-by-side Neovim buffers.
+
+<p align="center">
+  <img src="docs/screenshots/devices/device_foldable_terminal.png" width="48%" alt="Foldable Terminal" />
+  <img src="docs/screenshots/devices/device_foldable_stats.png" width="48%" alt="Foldable Stats" />
+</p>
+
+---
+
+### 💻 7" & 10" Tablets (Workstation Mode)
+<p align="center">
+  <img src="docs/screenshots/devices/device_tablet7_controls.png" width="31%" alt="7-inch Tablet Controls" />
+  <img src="docs/screenshots/devices/device_tablet7_terminal.png" width="31%" alt="7-inch Tablet Terminal" />
+  <img src="docs/screenshots/devices/device_tablet10_stats.png" width="35%" alt="10-inch Tablet Stats" />
+</p>
+
+<p align="center">
+  <img src="docs/screenshots/devices/device_tablet10_terminal.png" width="48%" alt="10-inch Tablet Terminal" />
+  <img src="docs/screenshots/devices/device_tablet10_apps.png" width="48%" alt="10-inch Tablet AI Studio" />
+</p>
+
+* **Extended Canvas**: Dedicated 10-workspace Hyprland selector, full 80×24+ terminal grid, split code editor panes, and real-time hardware gauges.
+* **External Keyboard & Trackpad Ready**: Native support for Bluetooth mechanical keyboards, mouse hover states, and physical Super key window management.
+
+---
+
+### 🖥️ Chromebooks & External Displays (Desktop Sovereignty)
+<p align="center">
+  <img src="docs/screenshots/devices/device_chromebook_terminal.png" width="98%" alt="Chromebook Terminal Desktop" />
+</p>
+<p align="center">
+  <img src="docs/screenshots/devices/device_chromebook_apps.png" width="48%" alt="Chromebook AI Studio" />
+  <img src="docs/screenshots/devices/device_chromebook_themes.png" width="48%" alt="Chromebook Themes" />
+</p>
+
+* **Full Desktop Grid**: Authentic Quickshell top bar, unified dock, full terminal emulation with true-color support, and instantaneous ricing across 22+ themes.
+
+---
+
+## 🐾 Cyber Mascot Trio & Sovereign Heritage
+
+Anomarchy is rooted in the sovereign Linux desktop movement, featuring visual companions celebrating digital autonomy:
+
+| Mascot | Role | Signature Specialty & Heritage |
 |---|---|---|
-| **🐱 Catface** | Terminal & Neovim Specialist | *"Meow. Arch with Hyprland is pure developer joy."* — Guides command shortcuts, buffer switching, and `:w` local persistence. |
-| **🦒 Longneck** | Kernel & System Architect | *"I eat lions like you for breakfast."* — Oversees `btop`, process isolation, memory meters, and sovereign computing integrity. |
-| **⚡ Plinky** | Cyber Rice & Ergonomics Guide | *"Keep it sovereign. The cyberpunk aesthetic meets offline privacy."* — Helps you switch Hyprland themes, workspace gestures, and quick settings. |
+| **🐱 Catface** | Terminal & Neovim Specialist | *"Arch with Hyprland is pure developer joy."* — Dedicated to keyboard-driven mastery, buffer editing, and `:w` local persistence. |
+| **🦒 Longneck** | Kernel & System Architect | *"I eat lions like you for breakfast."* — Symbolizes rugged independence, hardware telemetry, process isolation, and cloud-exit freedom. |
+| **⚡ Plinky** | Cyber Rice & Ergonomics Guide | *"Keep it sovereign. The cyberpunk aesthetic meets offline privacy."* — Embodies aesthetic ricing, 22+ color presets, and distraction-free ergonomics. |
 
-* **Animated Bootloader Splash**: Real-time simulated kernel boot sequence with floating mascot telemetry on startup (`LOADED [CATFACE, LONGNECK, PLINKY]`).
-* **Optional Floating Assistant**: A discreet, draggable cyber bubble delivering contextual keyboard shortcut tips and workflow recommendations. Easily toggleable in the Control Center or minimized to an unobtrusive floating bubble.
+* **Clean Standalone Launch**: Boots directly into the pure Hyprland workspace cockpit without forced popups or unrequested overlays.
+* **Sovereign Attribution**: Lineage honoring DHH's Omakase philosophy and @aegntic's native mobile architecture proudly displayed throughout the system.
 
 ---
 
