@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/cover-16x9.jpg" alt="anomarchy — Omarchy for Android" width="100%" />
+</p>
+
 <div align="center">
 
 <img src="art/icon.png" width="128" height="128" alt="Anomarchy 3D Plush App Icon" style="border-radius: 28px;" />
